@@ -1,5 +1,6 @@
 .attribution { 
     font-size: 11px; text-align: center; 
+    margin-top: 50px;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
@@ -8,19 +9,20 @@ body{
     background-color: hsl(210, 46%, 95%);
     font-size: 13px;
     font-family: "Barlow Semi Condensed", sans-serif;
-}
-main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: auto;
+}
+header {
+    margin: 40px;
 }
 .container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(4, 270px);
+    grid-template-rows: repeat(2, 280px);
     gap: 20px;
-    width: 73%;
 }
 .daniel-card {
     position: relative;
@@ -93,14 +95,22 @@ span {
 p {
     color: hsla(0, 0%, 81%, 0.797);
     font-weight: 500;
-    line-height: 2.5vh;
+    
 }
 .white-back {
     color: hsl(0, 1%, 52%);
     margin-top: 20px;
-    line-height: 2.5vh;
     font-weight: 500;
 }
 h2 {
     font-weight: 500;
+}
+@media (max-width:1150px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .white-back {
+        line-height: auto;
+    }
 }
