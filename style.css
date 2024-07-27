@@ -1,0 +1,106 @@
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+body{
+    background-color: hsl(210, 46%, 95%);
+    font-size: 13px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    width: 73%;
+}
+.daniel-card {
+    position: relative;
+    z-index: 1;
+    grid-area: 1/1/2/3;
+    background-color: hsl(263, 55%, 52%);
+    padding: 30px;
+    border-radius: 10px;
+}
+.header {
+    display: flex;
+    height: 30px;
+}
+img {
+    border-radius: 50%;
+    max-width: 30px;
+    max-height: 30px;
+}
+.quotation {
+    border-radius: 0;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    left: 65%;
+    top: 0;
+    z-index: -1;
+}
+.jonathan-card {
+    grid-area: 1/3/2/4;
+    background-color: hsl(217, 19%, 35%);
+    padding: 30px;
+    border-radius: 10px;
+}
+.kira-card {
+    grid-area: 1/4/3/5;
+    background-color: hsl(0, 0%, 100%);
+    padding: 30px;
+    border-radius: 10px;
+}
+.jeanette-card {
+    grid-area: 2/1/3/2;
+    background-color: hsl(0, 0%, 100%);
+    padding: 30px;
+    border-radius: 10px;
+}
+.patrick-card {
+    grid-area: 2/2/3/4;
+    background-color: hsl(219, 29%, 14%);
+    padding: 30px;
+    border-radius: 10px;
+}
+.txt {
+    position: relative;
+    bottom: 17px;
+    left: 20px;
+    text-align: justify;
+}
+span {
+    font-weight: 500;
+}
+.white {
+    color: white;
+}
+.black {
+    color: hsl(217, 19%, 35%);
+}
+.img-border {
+    border: 2px solid hsl(269.19deg 70.7% 69.22%);
+}
+p {
+    color: hsla(0, 0%, 81%, 0.797);
+    font-weight: 500;
+    line-height: 2.5vh;
+}
+.white-back {
+    color: hsl(0, 1%, 52%);
+    margin-top: 20px;
+    line-height: 2.5vh;
+    font-weight: 500;
+}
+h2 {
+    font-weight: 500;
+}
